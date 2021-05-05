@@ -10,4 +10,4 @@ Exercício 8: Digite várias idades. Exiba quantas pessoas são  maior  de  idad
 
 Exercício 9: Digite vários nomes. Exiba na tela todos os nomes digitados, porém de maneira invertida (do último para o primeiro, usando linguagem PHP).
 
-
+Exercício 10: Digite uma data. Exiba separadamente o dia, o mês e o ano. (use linguagem PHP)
