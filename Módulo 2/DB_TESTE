@@ -6,3 +6,9 @@ CREATE TABLE `agenda`(
     datanascimento DATE,
     criadoEm TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
+
+INSERT INTO `agenda`(
+    `nome`,`e-mail`,`celular`,`datanascimento`
+)VALUES(
+    'Ruann','email@teste.com','88 989556565','2034-02-01'
+);
