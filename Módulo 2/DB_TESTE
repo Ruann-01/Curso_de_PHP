@@ -8,7 +8,11 @@ CREATE TABLE `agenda`(
 );
 
 INSERT INTO `agenda`(
-    `nome`,`e-mail`,`celular`,`datanascimento`
-)VALUES(
-    'Ruann','email@teste.com','88 989556565','2034-02-01'
-);
+    `nome`,`email`,`celular`,`datanascimento`
+)VALUES
+    ('Gaby','email@teste.com','88 9884848498','2034-02-02'),
+    ('Thiago','email@teste.com','88 9898515151','2034-02-03'),
+    ('Naiara','email@teste.com','88 989584511','2034-02-04'),
+    ('José','email@teste.com','88 9895545565','2034-02-05');
+    
+SELECT * FROM `agenda`;
