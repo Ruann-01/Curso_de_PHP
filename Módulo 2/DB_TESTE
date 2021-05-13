@@ -16,3 +16,21 @@ INSERT INTO `agenda`(
     ('José','email@teste.com','88 9895545565','2034-02-05');
     
 SELECT * FROM `agenda`;
+
+UPDATE `agenda` SET `nome` = "Gabrielly" WHERE id=2;
+
+DELETE FROM `agenda` WHERE id=1;
+
+
+CREATE TABLE `Cursos`(
+    cod_curso INT PRIMARY KEY AUTO_INCREMENT,
+    nome_curso VARCHAR(50),
+    criadoEm TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE `Disciplinas`(
+    cod_disc INT PRIMARY KEY AUTO_INCREMENT,
+    nome_disciplina VARCHAR(50),
+    carga_horaria VARCHAR(10),
+    criadoEm TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
