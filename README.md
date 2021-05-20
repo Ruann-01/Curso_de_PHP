@@ -19,4 +19,6 @@ Exercício 6: Crie uma lista de usuários em um arquivo txt, que seja preenchida
 
 Exercício 7: Crie um formulário onde você ira digitar: Nome de Um produto, Quantidade e Preço. Salve em um arquivo txt, leia o arquivo e exiba os dados salvos numa tabela.
 
+Exercício 9: Crie um sistema de login utilizando apenas as funções de manipulação de arquivos.
+
 Exercício 10: Crie um cadastro e exiba os dados cadastrados em uma tabela, usando apenas manipulação de arquivos.
