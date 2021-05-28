@@ -1,0 +1,6 @@
+CREATE DATABASE `meuscursos`;
+
+CREATE TABLE `cursos`(
+    id INT  PRIMARY KEY AUTO_INCREMENT, 
+    cursos VARCHAR (30)
+);
