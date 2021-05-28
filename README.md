@@ -26,3 +26,7 @@ Exercício 10: Crie um cadastro e exiba os dados cadastrados em uma tabela, usan
 Módulo 4:
 
 Exercício 6: Crie uma API que retorna os cursos cadastrados no banco de dados.
+
+Exercício 7: Crie uma API que retorna os cursos cadastrados no banco de dados, com o status "Ativo", e exiba o json retornado.
+
+Exercício 9: Crie uma conexão com o banco de dados. Faça um formulário onde seja possivel cadastrar um curso. Leia a tabela de cursos do banco de dados e exiba o retorno em um JSON formato para objetos ou array. Exiba em uma tabela.
