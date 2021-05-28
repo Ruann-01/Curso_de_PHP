@@ -1,16 +1,16 @@
 <?php
-include_once 'Conexao.php';
+	include_once 'Conexao.php';
 
-$curso = $_POST['curso'];
+	$curso = $_POST['curso'];
 
-$query = "INSERT INTO cursos(curso) VALUES('$curso')";
+	$query = "INSERT INTO cursos(curso) VALUES('$curso')";
 
-$return = mysqli_query($conn, $query);
+	$return = mysqli_query($conn, $query);
 
-if($return){
-	header("location: meuCadastro.php");
-}else{
-	echo "Erro";
-}
+	if($return){
+		header("location: meuCadastro.php");
+	}else{
+		echo "Erro";
+	}
 
 ?>
