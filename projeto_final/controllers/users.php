@@ -10,6 +10,8 @@ include_once dirname(__DIR__).'/models/class/Manager.class.php';
 
 $manager = new Manager;
 
+/*Toda a criação e estruturação do CRUD está disposta abaixo, com: adição, edição e delete*/
+
 if(isset($_GET['action']) && $_GET['action'] == "delete"){
 	$_POST['action'] = "delete";
 }

@@ -1,8 +1,13 @@
+
+/**@author: Ruann Campos
+*@package: principal
+*---Aqui está disposto todo o estilo utilizado no sistema criado---
+**/
+
 body{
     font-family: Calibri;
     margin: 0px;
     background-color: #483D8B;
- /* background: url('views/img/background.jpg'); */
 }
 
 a{
