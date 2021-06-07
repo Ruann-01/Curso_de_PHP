@@ -1,0 +1,112 @@
+
+
+CREATE TABLE cadastro(
+   id INT PRIMARY KEY AUTO_INCREMENT,
+   nome VARCHAR (20),
+   sobrenome VARCHAR (30),
+   email  VARCHAR (60),
+   login  VARCHAR (60),
+   senha  VARCHAR (20),
+   data TIMESTAMP
+) 
+
+CREATE TABLE Categoria(
+   codcategoria INT PRIMARY KEY AUTO_INCREMENT,
+   categoria VARCHAR (20)
+)
+
+CREATE TABLE Produto(
+   codproduto INT PRIMARY KEY AUTO_INCREMENT,
+   Categoria_codcategoria INT,
+   Fornecedor_codfornecedor INT,
+   descricao VARCHAR (20),
+   peso DOUBLE,
+   controlado BOOLEAN,
+   qtdemin  INT
+)
+
+CREATE TABLE Fornecedor(
+   codfornecedor INT PRIMARY KEY AUTO_INCREMENT,
+   Cidade_codcidade INT(20),
+   fornecedor VARCHAR (20),
+   endere�o VARCHAR (50),
+   num INT (255),
+   bairro VARCHAR (20),
+   cep  CHAR(9),
+   contato VARCHAR (12),
+   cnpj  CHAR(12),
+   insc  VARCHAR (10),
+   tel CHAR(11)
+
+)
+
+CREATE TABLE Cidade(
+   codcidade INT PRIMARY KEY AUTO_INCREMENT,
+   cidade VARCHAR (20),
+   uf VARCHAR (2)
+)
+
+CREATE TABLE Entrada(
+   codentrada INT PRIMARY KEY AUTO_INCREMENT,
+   Transportadora_codtransportadora INT,
+   dataped DATE,
+   dataentr DATE,
+   total DOUBLE,
+   frete DATE,
+   numnf INT,
+   imposto DOUBLE
+)
+
+CREATE TABLE ItemEntrada(
+   coditementrada INT PRIMARY KEY AUTO_INCREMENT,
+   Produto_codproduto INT,
+   Entrada_codentrada INT,
+   lote VARCHAR (20),
+   qtde INT,
+   valor DOUBLE
+)
+
+CREATE TABLE Trasnportadora(
+   codtrasnportadora INT PRIMARY KEY AUTO_INCREMENT,
+   cidade_codcidade INT,
+   transportadora VARCHAR(20),
+   endere�o VARCHAR(20),
+   num INT,
+   bairro VARCHAR (20),
+   cep CHAR(9),
+   cnpj CHAR(8),
+   insc VARCHAR (20),
+   tel CHAR(14)
+)
+
+
+CREATE TABLE ItemSaida(
+   coditemsaida INT PRIMARY KEY AUTO_INCREMENT,
+   Saida_codsaida INT,
+   Produto_codproduto INT,
+   lote VARCHAR (20),
+   qtde INT,
+   valor DOUBLE
+)
+
+CREATE TABLE Saida(
+   codsaida INT PRIMARY KEY AUTO_INCREMENT,
+   Loja_codloja INT,
+   Trasnportadora_codtransportadora INT,
+   total DOUBLE,
+   qtde INT,
+   valor DOUBLE
+)
+
+
+CREATE TABLE Loja(
+   codloja INT PRIMARY KEY AUTO_INCREMENT,
+   Cidade_codcidade INT,
+   nome VARCHAR (50),
+   endere�o VARCHAR (50),
+   num INT,
+   bairro VARCHAR (20),
+   tel CHAR(14),
+   insc  VARCHAR (10),
+   cnpj  CHAR(18)
+)

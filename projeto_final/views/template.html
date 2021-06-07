@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!--@author: Ruann Campos
+*@package: views
+-->
+<html>
+<title>Pagina Principal </title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+<link href="stylesheet.css" rel="stylesheet">
+<meta charset="utf-8"/>
+<body>
+
+<header>
+	<input type="text" name="nome" placeholder="buscar"> 
+</header>
+
+<div class="sub-menu">
+	<div class="menu">
+	  <ul>
+		<li><a href="?op=insert-user">Adicionar</a></li>
+		<li><a href="?op=manager-users">Listar</a></li>
+	<!--	<li><a href="?op=edit-user">Editar</a></li> -->
+		<li><a href="controllers/logout.php">Logout</a></li>
+	  </ul>
+	</div>
+	<br>
+	<div class="listagem">
+	  <?php page_content();?>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+</body>
+</html>
+
+
