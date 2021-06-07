@@ -30,7 +30,7 @@
         <input type="submit" value="login" class="botao-envia"><br>
 
         <a href="esqueci.html">Esqueci a senha</a><br><br>
-        Não tem uma conta ainda? 
+        Ainda não possui uma conta? 
 
         <a href="cadastra.html" class="botao-link">Cadastrar agora!</a><br>
 
